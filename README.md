@@ -11,14 +11,6 @@ iii. Setup the store in `App.js`
 iv. Make a file `store.js`, which contains reducer function and iske andar slice name hota h.  
 v. Create a slice file  
 
----
-
-## What does reducer function do in slice?
-
----
-
-## Slice :-
-
 Slice is used to manage state.  
 - `name`: slice ka naam  
 - `initialState`: initial ka data  
@@ -50,14 +42,28 @@ b. Action ek event hai (jaise `onClick`), jo reducer ko trigger karta hai.
 ---
 
 ## Dispatch ->
+- Jab user koi action kare (like button click), toh dispatch ke through action ko reducer tak bhejte h.
 
-Jab user koi action kare (like button click), toh dispatch ke through action ko reducer tak bhejte h.
+- onClick={()=>dispatch(addTocart(data))} 
+  dispatch me 2 chij jata h type and payload.
+  type-addTocart and payload - data .
 
 ---
 
-## Selector ->
+## How redux store looks like
+{
+  cart: {
+    items: []
+  }
+}
 
+
+
+## Selector ->
 Selectors Redux store se state ko retrieve karne ke liye use hote hain.
+   
+=> const cartData=useSelector((state)=>state.cart.items);
+=> state.cart.items -> state means store me jao waha cart name ka slice hoga usme items name ka array hoga
 
 ---
 

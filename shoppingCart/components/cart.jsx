@@ -8,13 +8,9 @@ import {removeFromCart} from '../redux/cartSlice';
 const cart = () => {
 
     const cartData=useSelector((state)=>state.cart.items);
+    //state.cart.items -> state means store me jao waha cart name ka slice hoga usme items name ka array hoga
 
     const dispatch=useDispatch();
-
-    
-    const HandleRemove=(index)=>{
-        dispatch(removeFromCart(index));
-    }
 
 
   return (
@@ -30,7 +26,7 @@ const cart = () => {
                     <p>{data.description}</p>
                     <p>{data.rating}</p>
 
-                    <button onClick={()=>HandleRemove(index)}>
+                    <button onClick={()=>dispatch(removeFromCart(index))}>
                     Remove
                     </button>
                     </div>

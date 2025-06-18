@@ -21,11 +21,6 @@ const ProductList = () => {
         productList();
     },[]);
 
-    const dispatchFuntion=(data)=>{
-        dispatch(addToCart(data));
-    };
-    
-
   return (
     <div>
         {
@@ -36,7 +31,7 @@ const ProductList = () => {
                     <p>{data.description}</p>
                     <p>{data.category}</p>
 
-                    <button onClick={()=>dispatchFuntion(data)}>
+                    <button onClick={()=>dispatch(addToCart(data))}>
                         Add to Cart
                     </button>
                 </div>

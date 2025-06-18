@@ -23,6 +23,7 @@
 - Clean & scalable code structure ready hota hai production ke liye.
 - Alag-alag component me baar-baar logic likhne ki zarurat nahi padti.
 
+Note: thunk me api call ke liye manually try and catch nhi likhna padta. sab kuch thunk manage ka leta h.
 
 # Redux Toolkit Thunk vs Context API
 
