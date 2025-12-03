@@ -97,5 +97,4 @@ Redux also provide MIDDLEWARE. like  data fetch karke koi state update karna h,i
 - SAGA
 ->Difficult to learn and setup.
 
-->Context api is included with react and Redux is an external library.
 
