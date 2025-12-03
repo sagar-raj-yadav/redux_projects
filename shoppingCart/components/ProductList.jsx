@@ -24,14 +24,14 @@ const ProductList = () => {
   return (
     <div>
         {
-            productList.map((value,index)=>{
+            Data.map((product,index)=>{
                 return(
                 <div key={index}>
-                    <img src={Data.image} />
-                    <p>{data.description}</p>
-                    <p>{data.category}</p>
+                    <img src={product.image} />
+                    <p>{product.description}</p>
+                    <p>{product.category}</p>
 
-                    <button onClick={()=>dispatch(addToCart(data))}>
+                    <button onClick={()=>dispatch(addToCart(product))}>
                         Add to Cart
                     </button>
                 </div>
@@ -43,3 +43,18 @@ const ProductList = () => {
 }
 
 export default ProductList
+
+/*
+Note:-
+product store me yesa dikhega,
+
+{
+  id: 1,
+  title: "Men's Cotton Jacket",
+  price: 55.99,
+  description: "Great jacket...",
+  category: "men's clothing",
+  image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+}
+
+*/
