@@ -92,7 +92,7 @@ Redux also provide MIDDLEWARE. like  data fetch karke koi state update karna h,i
 ->REDUX also have loggers jo state ko track karne me help karta h.Haar action and haar update pe state ko track kar sakte h.
 
 # For API calling in redux Toolkit we use
-- RTK query
+- RTK query -> auto caching, auto loading & error handling
 - THUNK
 - SAGA
 ->Difficult to learn and setup.
